@@ -6,6 +6,7 @@
 #
 # Apache V2
 #
+# TODO: move zip install to its own Recipe
 
 if node['artifactory']['install_java']
   node.normal['java']['jdk_version'] = node['artifactory']['java']['jdk_version']
@@ -17,6 +18,6 @@ when 'rhel'
   include_recipe '::_rpm_install'
 when 'debian'
   include_recipe '::_apt_install'
-when 'zip'
+else
   include_recipe '::_zip_install'
 end
