@@ -38,11 +38,11 @@ default['artifactory']['ajp']['backlog'] = 100
 
 # RPM based installations
 default['artifactory']['rpm'] = {
-  'pro' => { 'rpm_url' => 'https://jfrog.bintray.com/artifactory-pro-rpms',
+  'pro' => { 'url' => 'https://jfrog.bintray.com/artifactory-pro-rpms',
              'install_name' => 'jfrog-artifactory-pro' },
-  'ce' => { 'rpm_url' => 'https://jfrog.bintray.com/artifactory-pro-rpms',
+  'ce' => { 'url' => 'https://jfrog.bintray.com/artifactory-pro-rpms',
             'install_name' => 'jfrog-artifactory-cpp-ce' },
-  'oss' => { 'rpm_url' => 'https://jfrog.bintray.com/artifactory-pro-rpms',
+  'oss' => { 'url' => 'https://jfrog.bintray.com/artifactory-pro-rpms',
              'install_name' => 'jfrog-artifactory-oss' },
 }
 # APT based installations
