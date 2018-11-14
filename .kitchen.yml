@@ -14,13 +14,22 @@ provisioner:
 
 platforms:
   - name: ubuntu-16.04
+    box: ubuntu-16.04
+    box_url: ../bento/builds/ubuntu-14.04.virtualbox.box
   - name: debian-8.6
-  - name: centos-7.3
+    box: debian-8.6
+    box_url: ../bento/builds/debian-8.6.virtualbox.box
+  - name: centos-6.9
+    box: centos-6.9
+    box_url: ../bento/builds/centos-6.9.virtualbox.box
+  - name: centos-7.4
+    box: centos-7.4
+    box_url: ../bento/builds/centos-7.4.virtualbox.box
 
 suites:
-  - name: artifactory-oracle
+  - name: default
     run_list:
-      - recipe[artifactory]
+      - recipe[artifactory::default]
     attributes:
       java:
         oracle:
