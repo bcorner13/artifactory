@@ -21,13 +21,9 @@ end
 #              'install_name': 'jfrog-artifactory-oss' },
 # }
 
-log node['artifactory']['artifactory_type']
-
-log node['artifactory']['rpm'][node['artifactory']['artifactory_type']]['rpm_url']
-log node['artifactory']['rpm'][node['artifactory']['artifactory_type']]['install_name']
 yum_repository 'artifactory' do
   description 'Jfrog Artifactory Stable repo'
-  baseurl node['artifactory']['rpm'][node['artifactory']['artifactory_type']]['rpm_url']
+  baseurl node['artifactory']['rpm'][node['artifactory']['artifactory_type']]['url']
   gpgcheck false
   repo_gpgcheck false
   action :create
