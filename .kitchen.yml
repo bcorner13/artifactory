@@ -13,9 +13,9 @@ provisioner:
       ark_retry_delay: 10
 
 platforms:
-  - name: ubuntu-18.04
-    box: ubuntu-18.04
-    box_url: ../bento/builds/ubuntu-18.04.virtualbox.box
+  - name: ubuntu-16.04
+    box: ubuntu-16.04
+    box_url: ../bento/builds/ubuntu-16.04.virtualbox.box
   - name: debian-8.7
     box: debian-8.7
     box_url: ../bento/builds/debian-8.7.virtualbox.box
