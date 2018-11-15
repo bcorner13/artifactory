@@ -44,7 +44,7 @@ Many of these attributes are used only when doing a zip installation.
 * artifactory::apache-proxy - Setup Apache reverse proxy in front of Artifactory
 * artifactory::_apt_install - This is intended to be used internally by the default recipe. This will install the apt repository, build the indexes, and install artifactory on either Debian or Ubuntu
 * artifactory::_rpm_install - This is intended to be used internally by the default recipe. This will install the yum repository, and install artifactory on any rhel flavor
-* artifactory::_rpm_install - This is intended to be used internally by the default recipe. This will install the yum repository, and install artifactory on any rhel flavor
+* artifactory::_zip_install - This is intended to be used internally by the default recipe. This will do a zip installation. this should work on any other platform family. You will have to update the attributes related to this process.
 
 # Author
 
