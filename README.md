@@ -13,6 +13,12 @@ Refer to [Artifactory user guide](http://wiki.jfrog.org/confluence/display/RTF/G
 
 The default username/password for the server is admin/password
 
+# Platforms
+This has been tested on the following platforms.  It should work on any platform that uses yum or apt.
+* Centos 7.4
+* Ubuntu 16.04
+* Debian 8.7
+
 # Attributes
 Many of these attributes are used only when doing a zip installation.
 * `node['artifactory']['artifactory_type']` - The type of installation.  Valid options are `pro`(Professional), `oss`(Open Source Solution), and `ca`(Community Edition)
